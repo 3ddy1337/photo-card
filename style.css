@@ -4,7 +4,7 @@
 
 html {
   font-family: Verdana, sans-serif;
-  margin: 0 auto 20rem auto;
+  margin: 0 auto;
   max-width: 77ch;
   background-color: #f4f4ff;
   color: #191970;
@@ -28,14 +28,13 @@ html {
 }
 
 .nature {
-  max-width: 60ch;
   width: 100%;
   height: auto;
   border-radius: 1rem 1rem 0 0;
 }
 
 .card {
-  max-width: 60ch;
+  max-width: 50ch;
   box-shadow: 10px 50px 50px 10px rgba(0, 0, 0, 0.3);
   border-radius: 1rem 1rem 0 0;
   padding-bottom: 1rem;
@@ -47,6 +46,7 @@ html {
   right: 1rem;
   top: 1rem;
   transition-duration: 1s;
+  max-width: 2.5rem;
 }
 
 .star:hover {
