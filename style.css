@@ -54,35 +54,43 @@ a:active {
   margin-bottom: 2.5rem;
 }
 
-.nature {
-  width: 100%;
-  height: auto;
-  border-radius: 1rem 1rem 0 0;
-  aspect-ratio: 16 / 9;
-}
-
 .card {
   max-width: 50ch;
   box-shadow: 10px 50px 50px 10px var(--box-shadow);
   border-radius: 1rem 1rem 0 0;
   padding-bottom: 1rem;
   position: relative;
-  transition-duration: 1s;
+  transition: 1s;
+}
+
+.nature-picture {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem 1rem 0 0;
+  aspect-ratio: 16 / 9;
+  transition: 1s;
+}
+
+.nature-picture:hover {
+  transform: scale(1.2);
+}
+
+.picture-wrapper {
   overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .star {
   position: absolute;
-  right: 1rem;
-  top: 1rem;
+  right: 1.7rem;
+  top: 1.5rem;
   transition-duration: 1s;
   max-width: 2.5rem;
   filter: grayscale(1);
 }
 
 .card-text {
-  margin: 0.5rem;
-  overflow: hidden;
+  margin: 1rem;
 }
 
 .star:hover {
@@ -92,8 +100,4 @@ a:active {
 
 .card:hover {
   box-shadow: 10px 50px 50px 10px var(--shadow-hover);
-}
-
-.card:hover .nature {
-  transform: scale(1.1);
 }
