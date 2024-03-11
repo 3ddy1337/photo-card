@@ -6,8 +6,35 @@ html {
   font-family: Verdana, sans-serif;
   margin: 0 auto 20rem auto;
   max-width: 77ch;
+
+  --border-color: #191970;
+  --box-shadow: rgba(0, 0, 0, 0.3);
+  --shadow-hover: rgba(6, 5, 70, 0.7);
+  --link-color: #191970;
+
   background-color: #f4f4ff;
   color: #191970;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  html {
+    --border-color: aqua;
+    --box-shadow: rgba(0, 217, 255, 0.158);
+    --shadow-hover: rgba(15, 214, 240, 0.459);
+    --link-color: aqua;
+
+    background-color: rgb(31, 28, 28);
+    color: aqua;
+  }
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: var(--link-color);
+  font-weight: bold;
 }
 
 /**********************************************/
@@ -19,7 +46,7 @@ html {
   font-weight: bold;
   font-size: 4rem;
   text-align: right;
-  border-left: 1rem solid #191970;
+  border-left: 1rem solid var(--border-color);
 }
 
 .header-text {
@@ -31,14 +58,17 @@ html {
   width: 100%;
   height: auto;
   border-radius: 1rem 1rem 0 0;
+  aspect-ratio: 16 / 9;
 }
 
 .card {
   max-width: 50ch;
-  box-shadow: 10px 50px 50px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 50px 50px 10px var(--box-shadow);
   border-radius: 1rem 1rem 0 0;
   padding-bottom: 1rem;
   position: relative;
+  transition-duration: 1s;
+  overflow: hidden;
 }
 
 .star {
@@ -47,13 +77,23 @@ html {
   top: 1rem;
   transition-duration: 1s;
   max-width: 2.5rem;
-}
-
-.star:hover {
-  transition-duration: 1s;
-  transform: rotate(180deg);
+  filter: grayscale(1);
 }
 
 .card-text {
-  margin: 1rem;
+  margin: 0.5rem;
+  overflow: hidden;
+}
+
+.star:hover {
+  transform: rotate(360deg);
+  filter: grayscale(0);
+}
+
+.card:hover {
+  box-shadow: 10px 50px 50px 10px var(--shadow-hover);
+}
+
+.card:hover .nature {
+  transform: scale(1.1);
 }
