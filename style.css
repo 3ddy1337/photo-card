@@ -16,7 +16,12 @@ html {
   color: #191970;
 }
 
-@media screen and (prefers-color-scheme: dark) {
+::selection {
+  background-color: #191970;
+  color: white;
+}
+
+_@media screen and (prefers-color-scheme: dark) {
   html {
     --border-color: aqua;
     --box-shadow: rgba(0, 217, 255, 0.158);
@@ -25,6 +30,11 @@ html {
 
     background-color: rgb(31, 28, 28);
     color: aqua;
+  }
+
+  ::selection {
+    background-color: aqua;
+    color: black;
   }
 }
 
@@ -35,6 +45,7 @@ a:visited,
 a:active {
   color: var(--link-color);
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
 /**********************************************/
@@ -47,6 +58,7 @@ a:active {
   font-size: 4rem;
   text-align: right;
   border-left: 1rem solid var(--border-color);
+  text-shadow: 10px 10px 10px var(--box-shadow);
 }
 
 .header-text {
@@ -56,8 +68,8 @@ a:active {
 
 .card {
   max-width: 50ch;
-  box-shadow: 10px 50px 50px 10px var(--box-shadow);
-  border-radius: 1rem 1rem 0 0;
+  box-shadow: 0px 0px 100px 0px var(--box-shadow);
+  border-radius: 1rem 1rem 0.25rem 0.25rem;
   padding-bottom: 1rem;
   position: relative;
   transition: 1s;
@@ -93,11 +105,21 @@ a:active {
   margin: 1rem;
 }
 
+_.card-text::first-letter {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.first-letter {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
 .star:hover {
   transform: rotate(360deg);
   filter: grayscale(0);
 }
 
 .card:hover {
-  box-shadow: 10px 50px 50px 10px var(--shadow-hover);
+  box-shadow: 0px 0px 200px 0px var(--shadow-hover);
 }
