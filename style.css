@@ -147,6 +147,7 @@ a:active {
   display: grid;
   grid-template-columns: 1fr;
   padding-left: 1rem;
+  padding-right: 2rem;
 }
 
 .footer-section {
