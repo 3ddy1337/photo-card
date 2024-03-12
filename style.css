@@ -146,8 +146,9 @@ a:active {
 .grid-wrapper {
   display: grid;
   grid-template-columns: 1fr;
+  align-content: flex-start;
   padding-left: 1rem;
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 
 .footer-section {
@@ -168,6 +169,5 @@ i {
   .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 1rem;
   }
 }
