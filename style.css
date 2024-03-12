@@ -2,6 +2,12 @@
 
 /* General Stylings */
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 html {
   font-family: Verdana, sans-serif;
   margin: 0 auto 20rem auto;
