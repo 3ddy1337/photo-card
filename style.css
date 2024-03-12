@@ -154,6 +154,7 @@ a:active {
 .footer-section {
   display: grid;
   grid-template-columns: 2rem 1rem 1fr;
+  margin-bottom: 1rem;
 }
 
 .border-footer {
