@@ -10,7 +10,7 @@
 
 html {
   font-family: Verdana, sans-serif;
-  margin: 0 auto 20rem auto;
+  margin: 0 auto;
   max-width: 77ch;
 
   --border-color: #191970;
@@ -42,6 +42,14 @@ html {
     background-color: aqua;
     color: black;
   }
+}
+
+body {
+  margin: 1rem;
+}
+
+main {
+  margin-bottom: 20rem;
 }
 
 a,
@@ -131,4 +139,34 @@ a:active {
 .star:hover {
   transform: rotate(360deg);
   filter: grayscale(0);
+}
+
+/* Footer */
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 1rem;
+}
+
+.footer-section {
+  display: grid;
+  grid-template-columns: 2rem 1rem 1fr;
+}
+
+.border-footer {
+  border-left: 0.5rem solid var(--border-color);
+}
+
+h3,
+i {
+  margin: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1rem;
+  }
 }
