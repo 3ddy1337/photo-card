@@ -21,7 +21,7 @@ html {
   color: white;
 }
 
-_@media screen and (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: dark) {
   html {
     --border-color: aqua;
     --box-shadow: rgba(0, 217, 255, 0.158);
