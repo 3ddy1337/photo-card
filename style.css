@@ -116,7 +116,9 @@ a:active {
   transition: 1s;
 }
 
-.card-picture:hover {
+.card-picture:hover,
+.card:hover .card-picture,
+.star:hover .card picture {
   transform: scale(1.2);
 }
 
@@ -137,7 +139,7 @@ a:active {
 }
 
 .star:hover {
-  transform: rotate(360deg);
+  transform: scale(1.2) rotate(360deg);
   filter: grayscale(0);
 }
 
