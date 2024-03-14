@@ -69,17 +69,25 @@ a:active {
 /* Header */
 
 .header {
+  box-shadow: 0px 0px 100px 0px var(--box-shadow);
+  border-radius: 1rem 1rem 1rem 1rem;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 4.5rem;
   text-align: right;
   border-left: 1rem solid var(--border-color);
-  text-shadow: 10px 10px 10px var(--box-shadow);
+  margin-bottom: 1rem;
+  padding-right: 1rem;
 }
 
 .header-text {
+  box-shadow: 0px 0px 100px 0px var(--box-shadow);
+  border-radius: 1rem 1rem 1rem 1rem;
   max-width: 65ch;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
+  padding: 1rem;
+  border-right: 1rem solid var(--border-color);
+  float: right;
 }
 
 /**********************************************/
@@ -94,6 +102,7 @@ a:active {
   position: relative;
   transition: 1s;
   margin-bottom: 2rem;
+  clear: right;
 }
 
 .card-text {
@@ -138,7 +147,7 @@ a:active {
 
 .star {
   position: absolute;
-  right: 1.7rem;
+  left: 1.7rem;
   top: 1.5rem;
   transition: 1s;
   max-width: 2.5rem;
@@ -169,7 +178,8 @@ a:active {
 }
 
 .border-footer {
-  border-left: 0.5rem solid var(--border-color);
+  border-left: 0.25rem solid var(--border-color);
+  padding-left: 3rem;
 }
 
 h3,
@@ -181,6 +191,14 @@ i {
   box-shadow: 0px 0px 100px 0px var(--box-shadow);
   padding: 1rem;
   border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.footer-first-letter {
+  font-size: 2rem;
+}
+
+.fa-solid {
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -237,7 +255,7 @@ i {
 
   .star {
     position: absolute;
-    right: 585px;
+    left: 8rem;
     top: 30px;
   }
 }
