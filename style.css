@@ -214,9 +214,7 @@ i {
     margin: 1rem 1rem 1rem 5rem;
     display: flex;
     align-items: center;
-    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis ellipsis;
   }
 
   .first-letter {
@@ -225,6 +223,9 @@ i {
 
   .card-text p {
     margin-top: 2.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .star {
